@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:quill_html_editor/src/widgets/webviewx/src/webviewx_plus.dart';
 
-import '../constants/image_constants.dart';
-import 'el_tooltip/el_tooltip.dart';
 
 /// [EditTableDropDown] to edit the table, add remove columns rows etc.
 class EditTableDropDown extends StatefulWidget {
@@ -81,8 +77,7 @@ class _EditTableDropDownState extends State<EditTableDropDown> {
 
   Widget _getEditTableItem(
       EditTableEnum type, BuildContext context, bool isMobile) {
-    String value = "";
-    String imagePath = ImageConstant.kiInsertRowBelowPng;
+    String value = ""
 
     switch (type) {
       case EditTableEnum.insertRowAbove:
